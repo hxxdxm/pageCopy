@@ -1,0 +1,233 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    color: #222;
+    line-height: 1.4;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* ===================== header ===================== */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffe9a2;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav li {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  nav li a {
+  transition: color 0.2s ease;
+}
+
+nav li a:hover {
+  color: #cebd9e;
+}
+
+  /* ===================== hero ===================== */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #685a4a; /* 이미지 대체 단색 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+  }
+
+  .hero-content {
+    text-align: center;
+    color: #fff;
+  }
+
+  .hero-title {
+    width: 400px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+  }
+
+  .hero-date {
+    width: 400px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px dashed #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  /* ===================== section 공통 ===================== */
+  section {
+    padding: 80px 60px;
+    text-align: center;
+  }
+
+  .section-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ffe9a2;
+    margin: 0 auto 10px;
+    transform: rotate(45deg);
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #9e876f;
+    margin-bottom: 4px;
+  }
+
+  .section-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ccc;
+    margin-bottom: 50px;
+  }
+
+  /* ===================== card grid ===================== */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  .card-date {
+    display: inline-block;
+    background-color: #9e876f;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .card-thumb {
+    width: 100%;
+    height: 180px;
+    background-color: #ffe9a2; /* 이미지 대체 단색 */
+    border: 1px solid #ddd;
+  }
+
+  .card-title {
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .card-author {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #b9b298;
+    font-weight: 600;
+  }
+
+  /* ===================== more 버튼 ===================== */
+  .more-btn {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 12px 50px;
+    border-radius: 30px;
+    background-color: #9e876f;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* ===================== footer ===================== */
+  footer {
+    background-color: #9e876f;
+    color: #fff;
+    padding: 80px 60px;
+    text-align: center;
+  }
+
+  .footer-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 auto 10px;
+    transform: rotate(45deg);
+  }
+
+  .footer-title {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .footer-divider {
+    width: 300px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 auto 30px;
+  }
+
+  .sns-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .sns-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
