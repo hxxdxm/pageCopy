@@ -1,4 +1,24 @@
-const readyLater = ["nav-about", "nav-talents", "nav-goods", "nav-guideline", "nav-contact"];
+const readyLater = ["nav-about", "nav-talents", "nav-goods", "nav-guideline"];
+
+const navContact = document.getElementById("nav-contact");
+
+navContact.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const message = prompt("문의내용을 입력해주세요.");
+
+  if (message === null) {
+    // 취소 버튼 누른 경우 -> 아무것도 안 함
+    return;
+  }
+
+  if (message.trim() === "") {
+    alert("문의 내용을 입력해주세요!");
+    return;
+  }
+
+  alert("문의가 전송되었습니다.\n\n[내용]\n" + message);
+});
 
 readyLater.forEach(function (id) {
   const el = document.getElementById(id);
